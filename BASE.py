@@ -11,7 +11,7 @@ agenda = pd.read_excel('D:/Github/automacao_nf')
 # Layout
 sg.theme('reddit')
 layout = [
-    [sg.Image(filename='LOGO_U_REDUZ.png'), sg.Text('Grupo Ullmann'), sg.Push()],
+    [sg.Image(filename='LOGO_U_REDUZ.png'), sg.Text('Empresa'), sg.Push()],
     [sg.Text('Insira as informações para nota fiscal'), sg.Push()],
     [sg.Text('Cod Cliente'), sg.Input(key='cod_cliente')],
     [sg.Text('Peso'), sg.Input(key='peso')],
@@ -23,11 +23,11 @@ layout = [
     [sg.Text('Próx. NF'), sg.Input(key='nf')],
     [sg.Text('Cod. Motorista'), sg.Combo(['512', '365'], key='cod_motorista', size=(11, 1)), sg.Stretch(),
      sg.Text('Placa Motorista'), sg.Combo(['ABC1234, CBA4321'], key='placa_motorista', size=(11, 1))],
-    [sg.Text('Nome Motorista'), sg.Combo(['LUIZ', 'CARLOS'], key='nome_mot')],
-    [sg.Text('Fornecedor     '), sg.Combo(['10723'], key='fornecedor', size=(11, 1)), sg.Stretch(),
+    [sg.Text('Nome Motorista'), sg.Combo(['Nome1', 'Nome2'], key='nome_mot')],
+    [sg.Text('Fornecedor     '), sg.Combo(['12345'], key='fornecedor', size=(11, 1)), sg.Stretch(),
      sg.Text('Cod Transação'), sg.Combo(['5102', '6102', '2102'], key='cod_transacao', size=(11, 1))],
-    [sg.Text('Produto          '), sg.Combo(['D12REV0003'], key='produto', size=(11, 1)), sg.Stretch(),
-     sg.Text('Centro de Custo'), sg.Combo(['4020'], key='cc', size=(11, 1))],
+    [sg.Text('Produto          '), sg.Combo(['ABC1234565'], key='produto', size=(11, 1)), sg.Stretch(),
+     sg.Text('Centro de Custo'), sg.Combo(['1234'], key='cc', size=(11, 1))],
     [sg.Text('Tipo de Frete  '), sg.Combo(['F', 'C'], key='tipo_frete', size=(11, 1)), sg.Stretch(),
      sg.Text('Embutido?'), sg.Combo(['N', 'S'], key='f_embutido', size=(11, 1))],
     [sg.Button('Enviar'), sg.Button('Cancelar')]
